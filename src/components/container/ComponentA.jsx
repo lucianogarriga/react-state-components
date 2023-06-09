@@ -5,13 +5,15 @@ import { Contacto } from "../../models/contact.class";
 function ComponentA() {
 
     const defaultContact = new Contacto(
-        "Luciano","Martin","luciano@gmail.com",false
+        "Luciano","Martin","luciano@gmail.com", false,
     )
 
     const [state,setState] = useState(false)
 
     const changeState = () =>{
-        setState(!state) 
+      console.log('Antes del cambio', state);
+      setState(!state) 
+      console.log('Despues del cambio',state);
     }
 
   return (

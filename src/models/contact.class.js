@@ -4,7 +4,7 @@ export class Contacto {
     name = '';
     lastname = '';
     email = '';
-    conect = false;
+    conect = false
 
     constructor(name, lastname, email, conect){
         this.name = name;
